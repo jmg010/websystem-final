@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gallery</title>
+    <link rel="icon" href="images/J-logo.png" type="image/x-icon" />
+    <link rel="stylesheet" href="styles/Nav&Gallery.css" />
+  </head>
+  <body>
+    <header>
+      <a href="index.html">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          height="40px"
+          viewBox="0 -960 960 960"
+          width="40px"
+          fill="#e8eaed"
+        >
+          <path
+            d="m313-440 224 224-57 56-320-320 320-320 57 56-224 224h487v80H313Z"
+          />
+        </svg>
+      </a>
+      <h1>This is a Responsive Gallery</h1>
+      <hr />
+    </header>
+    <section class="gallery-section">
+      <div class="images">
+        <div class="img">
+          <img src="images/1.jpg" alt="" />
+        </div>
+        <div class="img img2">
+          <img src="images/2.jpg" alt="" />
+        </div>
+        <div class="img landscape">
+          <img src="images/myPhotos/2.jpg" alt="" />
+        </div>
+        <div class="img">
+          <img src="images/myPhotos/1.jpg" alt="" />
+        </div>
+        <div class="img">
+          <img src="images/myPhotos/3.jpg" alt="" />
+        </div>
+        <div class="img">
+          <img src="images/myPhotos/4.jpg" alt="" />
+        </div>
+        <div class="img">
+          <img src="images/myPhotos/5.jpg" alt="" />
+        </div>
+        <div class="img">
+          <img src="images/myPhotos/6.jpg" alt="" />
+        </div>
+        <div class="img">
+          <img src="images/myPhotos/7.jpg" alt="" />
+        </div>
+        <div class="img">
+          <img src="images/myPhotos/8.jpg" alt="" />
+        </div>
+      </div>
+      <div class="popup-image">
+        <span>&times;</span>
+        <img src="images/myPhotos/1.jpg" alt="" />
+      </div>
+    </section>
+    <script>
+      document.querySelectorAll(".images img").forEach((image) => {
+        image.onclick = () => {
+          document.querySelector(".popup-image").style.display = "block";
+          document.querySelector(".popup-image img").src =
+            image.getAttribute("src");
+        };
+      });
+
+      document.querySelector(".popup-image span").onclick = () => {
+        document.querySelector(".popup-image").style.display = "none";
+      };
+    </script>
+  </body>
+</html>

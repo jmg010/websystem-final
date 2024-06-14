@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home</title>
+    <link rel="icon" href="images/J-logo.png" type="image/x-icon" />
+    <link rel="stylesheet" href="styles/Lorem-Ipsum.css" />
+  </head>
+  <body>
+    <header>
+      <a class="logo" href="#">Lorem.</a>
+      <nav class="right-section">
+        <a class="hide-on-700px active" href="#home">Home</a>
+        <a class="hide-on-700px" href="#about">About</a>
+        <a class="hide-on-700px" href="gallery.html">Gallery</a>
+        <a class="hide-on-700px" href="contact.html">Contact</a>
+        <span onclick="showSideBar()" class="menu" href="#"
+          ><svg
+            class="svg-menu"
+            xmlns="http://www.w3.org/2000/svg"
+            height="30"
+            viewBox="0 -960 960 960"
+            width="30"
+          >
+            <path
+              d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"
+            /></svg
+        ></span>
+      </nav>
+    </header>
+    <div class="side-container">
+      <nav class="side-bar">
+        <span onclick="closeSideBar()"
+          ><svg
+            class="close"
+            xmlns="http://www.w3.org/2000/svg"
+            height="30"
+            viewBox="0 -960 960 960"
+            width="30"
+          >
+            <path
+              d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"
+            /></svg
+        ></span>
+        <a class="active" href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </div>
+
+    <section id="home">
+      <img
+        class="background-image"
+        src="/images/pexels-nextvoyage-1470405.jpg"
+        alt=""
+      />
+      <div class="home-content">
+        <h1>Hi I'm Jun Mark</h1>
+        <h3>Future Website Developer</h3>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum nemo
+          iure incidunt laudantium autem quod unde consectetur ab doloribus,
+          voluptate officiis voluptatum asperiores labore nostrum facilis
+          veniam.
+        </p>
+        <div class="home-btn">
+          <a href="me.html">See my face</a>
+          <a href="contact.html">Message me</a>
+        </div>
+      </div>
+    </section>
+    <section id="about">
+      <img class="background-image" src="/images/city.jpg" alt="" />
+      <div class="about-content">
+        <h2>About This Page?</h2>
+        <h1>This Website is Responsive</h1>
+        <h3>Try to Resize this Website</h3>
+      </div>
+    </section>
+    <footer>
+      <a href="#"> Yhazyy@gmail.comshop </a>
+    </footer>
+    <script src="scripts/lorem-ipsum.js"></script>
+  </body>
+</html>
